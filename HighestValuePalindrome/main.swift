@@ -10,16 +10,16 @@ import Foundation
 func highestValuePalindrome(s: String, n: Int, k: Int) -> String {
     let arr = Array(s)
     print(arr)
-    var intArr = arr.map { Int(String($0))! }
-    print(intArr)
-    for i in 0..<intArr.count {
+    for i in 0..<arr.count {
+        var intArr = arr.map { Int(String($0))! }
+        print(intArr)
         for j in 0...9 {
             intArr.remove(at: i)
             intArr.insert(j, at: i)
             print(intArr)
         }
-        
     }
+    
     
     
     return ""
