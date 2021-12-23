@@ -14,8 +14,11 @@ func highestValuePalindrome(s: String, n: Int, k: Int) -> String {
     print(intArr)
     for i in 0..<intArr.count {
         for j in 0...9 {
-             
+            intArr.remove(at: i)
+            intArr.insert(j, at: i)
+            print(intArr)
         }
+        
     }
     
     
